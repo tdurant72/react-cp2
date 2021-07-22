@@ -1,0 +1,24 @@
+.section{
+    margin: 0 auto;
+    padding: 10px 0;
+    max-width:960px;
+}
+.section__tile{
+    font-size: 40px;
+}
+@media (max-width: 425px){
+    .section{
+        max-width:400px;
+    }
+    .section__tile{
+        font-size: 32px;
+    }
+}
+@media (max-width: 834px){
+    .section{
+        max-width:820px;
+    }
+    .section__tile{
+        font-size: 38px;
+    }
+}
