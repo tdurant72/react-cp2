@@ -1,15 +1,17 @@
 export const themes = {
     primary: {
-        main: `#81D1FF`,
-        light: `#b3e3ff`,
-        dark: `#2ca3f7`,
+        main: `#1675d1`,
+        light: `#62a3ff`,
+        dark: `#004a9f`,
+        primaryWhite: `#ebf4ff`,
         darkText: `#130234`,
         lightText: `#FCFEFF`
     },
     secondary: {
-        main: `#F774C5`,
-        light: `#f9aedd`,
-        dark: `#ed0090`,
+        main: `#e91e63`,
+        light: `#ff6090`,
+        dark: `#b0003a`,
+        secondaryWhite: `#fce4ec`,
         darkText: `#29001A`,
         lightText: `#FFF7FC`
     },

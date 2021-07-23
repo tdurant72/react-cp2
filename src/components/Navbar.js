@@ -1,12 +1,10 @@
 import React from 'react'
 import "./Navbar.css"
 import MenuIcon from '@material-ui/icons/Menu';
-import Button from '@material-ui/core/Button';
 import styled from 'styled-components';
 import { themes } from './styles/ColorStyles';
 import { H2 } from './styles/Text.Styles';
-import PrimaryButton from './PrimaryButton';
-import SecondaryButton from './SecondaryButton';
+import { Button } from './Button';
 
 function Navbar({ title, logoSrc }) {
     return (
@@ -17,9 +15,9 @@ function Navbar({ title, logoSrc }) {
             </div>
             {title && <Title>{title}</Title>}
             <NavbarButtons>
-                <PrimaryButton primary={true} label="Login" />
-                <PrimaryButton label="Register" />
-                <SecondaryButton secondary={true} label="Contact Us" />
+                <Button label="Login" />
+                <Button type="primary-outline" primary={false} label="Register" />
+                <Button type="secondary" label="Contact Us" />
             </NavbarButtons>
             <div className="navbar__right--mobile">
                 <MenuIcon />
@@ -31,6 +29,7 @@ const NavbarWrapper = styled.div`
     display: flex; 
     align-items: center; 
     justify-content: space-between;
+    padding-bottom:5px;
     border-bottom: 2px solid orange;
 `;
 const NavbarLogo = styled.img`
@@ -44,6 +43,8 @@ const NavbarButtons = styled.div`
 `;
 const Title = styled(H2) `
     color:${themes.primary.darkText};
+    margin:0;
+    padding:0;
 `;
 
 export default Navbar

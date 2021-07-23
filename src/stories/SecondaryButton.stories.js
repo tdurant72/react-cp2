@@ -14,12 +14,13 @@ const Template = (args) => <SecondaryButton {...args} />;
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+    secondary: true,
     label: 'Button',
 };
 
 export const Outline = Template.bind({});
 Outline.args = {
-    outline: true,
+    secondary: false,
     label: 'Button',
 };
 

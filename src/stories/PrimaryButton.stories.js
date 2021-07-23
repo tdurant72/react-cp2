@@ -18,8 +18,9 @@ Primary.args = {
     label: 'Button',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const Outline = Template.bind({});
+Outline.args = {
+    primary: false,
     label: 'Button',
 };
 
