@@ -18,6 +18,7 @@ export const themes = {
     gray: {
         main: `#858586`,
         light: `#f5f5f5`,
-        dark: `#5f5f5f`
+        mid: `#5f5f5f`,
+        dark: `#414141`
     }
 }
